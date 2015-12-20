@@ -1,6 +1,7 @@
 main{
   position: absolute;
-  top:150px;
+  margin: 150px 30px 150px 30px;
+
 }
 main img{
   border-radius: 100%;
@@ -18,7 +19,7 @@ main h3, p{
 
 .text{
   position: relative;
-  top:100px;
+  top:120px;
   left:600px;
   width:400px;
   text-align: center;
