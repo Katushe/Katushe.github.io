@@ -1,0 +1,30 @@
+main{
+  position: absolute;
+  top:150px;
+}
+main img{
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left:200px;
+  border: 1px solid #D4D4D4;
+}
+main h3, p{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  color: #0B1D26;
+}
+
+.text{
+  position: relative;
+  top:100px;
+  left:600px;
+  width:400px;
+  text-align: center;
+}
+.buttons{
+  position: relative;
+  top:200px;
+  left:700px;
+}
