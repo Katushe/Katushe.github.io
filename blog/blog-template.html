@@ -2,22 +2,36 @@
 <html>
 
   <head>
-    <title>Page title goes here</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+    <title>Blog Post Title Goes Here</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
-
   <body>
-
+    <header>
+        <section>
+          <img src = "../imgs/header.jpg" alt = "logo">
+          <h3>Kathryn Garbacz</h3>
+        </section>
+        <nav class = "nav-bar">
+          <ul>
+            <li class = "nav-item"><a href="/index">Home</a></li>
+            <li class = "nav-item"><a href="/projects">Projects</a></li>
+            <li class = "nav-item"><a href="/blog">Blog</a></li>
+            <li class = "nav-item"><a href="/resume">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
     <article>
 
       <header>
-        <H1>Title Goes Here</H1>
-        <H3>Date Goes Here</H3>
+        <h1>Title Goes Here</h1>
+        <h2>Sub-Title Goes Here</h2>
+        <h3>Date Goes Here</h3>
       </header>
 
-      <img src="#" alt = "image will go here">
+      <img src="../imgs/blank.jpg" alt = "image will go here">
 
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia urna vulputate accumsan dapibus. Maecenas aliquam suscipit libero, ac imperdiet ipsum eleifend eget. Integer vel nisi tincidunt, tincidunt turpis nec, convallis orci. Duis tellus dui, mattis quis sollicitudin id, dapibus eu odio. Donec sed arcu vitae ipsum ultrices elementum vel sed velit. Quisque ac tempus diam. Morbi sollicitudin urna nec dolor suscipit venenatis finibus sit amet turpis. Nam velit urna, bibendum et mauris in, semper tristique purus. Nam vulputate metus ipsum, sed aliquam enim ullamcorper in. Curabitur vitae sollicitudin magna, quis rhoncus metus.
@@ -31,7 +45,17 @@
       </footer>
 
     </article>
-
+    <footer>
+        <section class ="contact">
+            <ul>
+              <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            </ul>
+        </section>
+      </footer>
   </body>
 
 </html>

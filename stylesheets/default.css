@@ -41,12 +41,13 @@ ul{
 .nav-item a{
   display: block;
 }
-nav-item a:hover{
+.nav-item a:hover{
   background-color: #0B1D26;
+  height: 38px;
 }
 a{
   text-decoration: none;
-  padding: 12px 15px 0 50px;
+  padding: 12px 25px 0 25px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: white;
