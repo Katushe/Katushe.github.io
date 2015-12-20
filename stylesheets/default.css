@@ -1,14 +1,14 @@
 body{
   background-color: #A8D5FF;
 }
-header{
+.page-header{
     top:0;
     left:0;
     height:125px;
     width:100%;
     position: absolute;
   }
-header h3{
+.page-header h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -16,8 +16,9 @@ header h3{
     color: white;
     top: 0;
     left:30px;
+    text-shadow: 2px 2px 2px #000000;
  }
-header img{
+.page-header img{
     height:75px;
     width:100%;
   }
@@ -33,7 +34,8 @@ ul{
   height: 50px;
   background-color: #255F7F;
   position:absolute;
-  box-shadow: 1px 2px 2px rgba(0,0,0,0.10), 1px 1px 1px rgba(0,0,0,0.15);
+  /*box-shadow: 1px 2px 2px rgba(0,0,0,0.10), 1px 1px 1px rgba(0,0,0,0.15);*/
+
 }
 .nav-item{
   float: right;
@@ -41,25 +43,26 @@ ul{
 .nav-item a{
   display: block;
 }
-nav-item a:hover{
+.nav-item a:hover{
   background-color: #0B1D26;
+  height: 38px;
 }
 a{
   text-decoration: none;
-  padding: 12px 15px 0 50px;
+  text-transform: uppercase;
+  padding: 12px 25px 0 25px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: white;
 }
-footer{
+.page-footer{
   bottom:0;
   left:0;
   width:100%;
   background-color: #255F7F;
-  position: absolute;
+  position: fixed;
   clear: both;
   height: 50px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.15);
 }
 .contact{
   position:absolute;

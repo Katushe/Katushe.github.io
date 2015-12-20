@@ -1,0 +1,21 @@
+main{
+  width: 100%;
+}
+table{
+  position: relative;
+  top:100px;
+  left:100px;
+}
+td{
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
+}
+td img{
+  height:175px;
+  width:175px;
+
+}
+td a{
+  padding:0;
+}

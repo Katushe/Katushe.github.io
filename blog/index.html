@@ -3,62 +3,76 @@
 
   <head>
       <title>Kathryn's Website</title>
-      <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog-home.css">
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
 
   <body>
-      <header>
+      <header class = "page-header">
         <section>
-          <img src = "#" alt = "logo">
+          <img src = "../imgs/header.jpg" alt = "header">
           <h3>Kathryn Garbacz</h3>
         </section>
-        <nav>
-            <a href="/index">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/blog">Blog</a>
-            <a href="/resume">Resume</a>
+        <nav class = "nav-bar">
+          <ul>
+            <li class = "nav-item"><a href="/index">Home</a></li>
+            <li class = "nav-item"><a href="/projects">Projects</a></li>
+            <li class = "nav-item"><a href="/blog">Blog</a></li>
+            <li class = "nav-item"><a href="/resume">Resume</a></li>
+          </ul>
         </nav>
       </header>
-      <hr/>
       <main>
           <table>
+           <!-- <thead>
+              <th>Blog Posts</th>
+            </thead> -->
             <tr>
               <td>
-                <a href="http://katushe.github.io/git"><img src="../imgs/octocat.png">Version Control: Git & GitHub</a>
+                <a href="http://katushe.github.io/git"><img src="../imgs/octocat.png">
+                  <br>Version Control: Git & GitHub</a>
               </td>
               <td>
-                <a href="#"><img src="../imgs/empty.png">Blog Post 2</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 2</a>
               </td>
               <td>
-                <a href="#"><img src="../imgs/empty.jpg">Blog Post 3</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 3</a>
               </td>
               <td>
-                <a href="#"><img src="../imgs/empty.jpg">Blog Post 4</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 4</a>
               </td>
             </tr>
             <tr>
               <td>
-                <a href="#"><img src="../imgs/empty.jpg">Blog Post 5</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 5</a>
               </td>
               <td>
-                <a href="#"><img src="../imgs/empty.jpg">Blog Post 6</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 6</a>
               </td>
               <td>
-                <a href="#"><img src="../imgs/empty.jpg">Blog Post 7</a>
+                <a href="#"><img src="../imgs/blank.jpg">
+                  <br>Blog Post 7</a>
               </td>
             </tr>
+
           </table>
       </main>
-      <hr/>
-      <footer>
-        <section>
-          <a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><img src="#">email</a>
-          <a href="https://github.com/Katushe"><img src="#">Github</a>
-          <a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><img src="#">LinkedIn</a>
-          <a href="#"><img src="#">Facebook</a>
-          <a href="#"><img src="#">Twitter</a>
+      <footer class ="page-footer">
+        <section class ="contact">
+            <ul>
+              <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            </ul>
         </section>
       </footer>
 
