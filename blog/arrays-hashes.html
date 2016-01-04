@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>Kathryn's DBC Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class = "page-header">
+        <div>
+          <img src = "../imgs/header.jpg" alt = "logo">
+          <h3>Kathryn Garbacz</h3>
+        </div>
+        <nav class = "nav-bar">
+          <ul>
+            <li class = "nav-item"><a href="/index">Home</a></li>
+            <li class = "nav-item"><a href="/projects">Projects</a></li>
+            <li class = "nav-item"><a href="/blog">Blog</a></li>
+            <li class = "nav-item"><a href="/resume">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
+    <article>
+
+      <header>
+        <h1>Arrays and Hashes</h1>
+        <h2>DBC Phase 0 Week 4</h2>
+        <h3>January 2, 2016</h3>
+      </header>
+      <div class = "blog-text">
+        <p class = "tab">
+        Arrays and hashes are both used to store collections in Ruby, but they are not always interchangeable.
+        </p>
+        <p class = "tab">
+        Arrays store collections of objects, and can hold any type of object-strings, integers, floats, you can even have an array of arrays. But you cannot mix types within a single array.Arrays are ordered, meaning that they have some sort of order, even if they’re not completely sorted from smallest to largest. Each element in an array has an integer index which tells you where it is located in the array. The index is how you access an element’s value. It is important to remember that in Ruby (and most languages) the first index in an array is 0, and thus the last index is not equal to the number of elements in the array, but rather the number of elements – 1.
+        </p>
+        <img src = "../imgs/Arrays.gif" alt = "array diagram">
+        <p class = "tab">
+        There are a few ways to declare an array in Ruby:<br><br>
+        <code> array_name = Array.new </code><br>
+        Will create a new empty array without a specified size.<br><br>
+        <code>array_name = Array.new(5)</code><br>
+        Will create a new empty array that has a size/length of 5 elements.<br><br>
+        <code> colors = Array["red","green", "blue"]</code> <br>
+        Will create a new array with some of the elements already specified.
+        </p>
+        <p class = "tab">
+        To access the value of an element use:<br>
+        <code> array_name[index]</code><br><br>
+        For example,<br>
+        <code> colors[0]</code><br>
+        Using the above array will return "red".
+        </p>
+        <p class = "tab">
+        Hashes on the other hand, hold collections of key-value pairs. Instead of accessing each element by an integer index, you explicitly assign every element a key and a value. Keys are then used to access the value, and thus must be unique. This means you cannot use the same key for different values within the same hash, otherwise the program would not know which value you want when you reference a key. You can however, assign the same value to multiple keys. Both the key and the value can be any type of object, and you can use a mix of different objects within a single hash.
+        </p>
+        <p class = "tab">
+        <p class = "tab">
+        There are a few ways to declare a hash in Ruby:<br><br>
+        <code> hash_name = Hash.new </code><br>
+        Will create a new empty hash, the default value for any new key will be nil, unless otherwise specified.<br><br>
+        <code>hash_name = Hash.new(value)</code><br>
+        Will create a new empty hash, but now whatever is in parenthesis will be the default value.<br><br>
+        <code> colors = Hash["r" => "red", "g" => "green", "b" => "blue"]</code> <br>
+        Will create a new hash with those elements specified, where r, g, b, are keys and red, blue, green are their corresponding values.
+        </p>
+        <p class = "tab">
+        To access the value of an element use:<br>
+        <code> hash_name[key]</code><br><br>
+        For example,<br>
+        <code> colors["r"]</code><br>
+        Using the above hash will return "red".
+        </p>
+
+      </div>
+
+    </article>
+    <footer class ="page-footer">
+        <div class ="contact">
+            <ul>
+              <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+            </ul>
+        </div>
+      </footer>
+  </body>
+
+</html>
+
+
