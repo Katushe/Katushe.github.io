@@ -63,10 +63,11 @@ a{
   position: fixed;
   clear: both;
   height: 50px;
+  text-align: center;
 }
 .contact{
-  position:absolute;
-  left: 475px;
+  /*position:absolute;
+  left: 475px;*/
   padding-top: 5px;
 }
 .contact-method{
