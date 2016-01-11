@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <title>Kathryn's DBC Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class = "page-header">
+        <div>
+          <img src = "../imgs/header.jpg" alt = "logo">
+          <h3>Kathryn Garbacz</h3>
+        </div>
+        <nav class = "nav-bar">
+          <ul>
+            <li class = "nav-item"><a href="/index">Home</a></li>
+            <li class = "nav-item"><a href="/projects">Projects</a></li>
+            <li class = "nav-item"><a href="/blog">Blog</a></li>
+            <li class = "nav-item"><a href="/resume">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
+    <article>
+
+      <header>
+        <h1>Enumerable Method:</h1>
+        <h2>DBC Phase 0 Week 5</h2>
+        <h3>January 9, 2016</h3>
+      </header>
+
+      <div class = "blog-text">
+        <p class = "tab">
+        "Enumerable" is both a module, meaning its a group of methods packaged together, and a mixin, meaning it can be used in other classes such as arrays and hashes. It is comprised of enumerable methods, which are methods that allow for traversing through and searching objects.
+        </p>
+
+        <p class = "tab">
+        One of these methods is <code>map</code>. It has both a non-destructive(plain old <code>map</code>) and destructive(<code>map!</code>) version. This means that <code>map</code> will create a copy of the array you call it on, so the original array is not affected by the method, while <code>map!</code> will modify the original array, so it won't exist in its original form anymore.
+        </p>
+        <p class = "tab">
+        <code>Map</code> is used to transform an array. When you call the map method, it will be followed by a code block in which you specify the change you would like to make to the elements in the array. Map will then iterate through the array and apply that change to each element.
+        </p>
+        <p class ="tab">
+          For example, say you have an array of integers and would like to multiply each integer by 2. Within the block, you declare a temporary variable for the current element, then specify that you want to multiply it by 2.
+        </p>
+        <img class = "tab" src="../imgs/map_example.png" alt = "map code">
+        <p class = "tab">
+          Now, <code>nums</code> will still have the original values, <code>[2,5,9,15]</code>, while <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
+        </p>
+        <img class = "tab" src="../imgs/map_destructive.png" alt = "map code">
+        <p class ="tab">
+          If you use the destructive version, <code>map!</code> then both <code>nums</code> and <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
+        </p>
+
+
+
+      </div>
+
+
+    </article>
+    <footer class ="page-footer">
+        <div class ="contact">
+            <ul>
+              <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+              <li class ="contact-method"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+            </ul>
+        </div>
+      </footer>
+  </body>
+
+</html>
+
+
