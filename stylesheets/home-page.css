@@ -16,7 +16,13 @@ main h3, p{
   font-family: 'Open Sans', sans-serif;
   color: #0B1D26;
 }
-
+main h3{
+  font-weight: bold;
+  font-size: 15pt;
+}
+main p{
+  font-size: 12pt;
+}
 .text{
   position: relative;
   top:120px;
