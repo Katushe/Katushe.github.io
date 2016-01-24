@@ -1,6 +1,16 @@
 main{
   width: 100%;
 }
+thead{
+    position: absolute;
+    margin: 50px 550px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1px #d2d9df;
+}
 table{
   position: relative;
   top:100px;
