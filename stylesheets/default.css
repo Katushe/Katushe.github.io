@@ -1,5 +1,6 @@
 body{
   background-color: #A8D5FF;
+  height: 100%;
 }
 .page-header{
     top:0;
@@ -58,6 +59,7 @@ a{
 .page-footer{
   bottom:0;
   left:0;
+  right: 0;
   width:100%;
   background-color: #255F7F;
   position: fixed;

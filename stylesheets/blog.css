@@ -1,6 +1,9 @@
 body{
   background-color: rgba(168, 213, 255, 0.45);
 }
+.wrap{
+  margin: 0 auto;
+}
 .post-img{
   width: 100px;
   position: relative;
@@ -59,4 +62,5 @@ article footer a{
 }
 .page-footer{
   height: 35px;
+  position: absolute;
 }
