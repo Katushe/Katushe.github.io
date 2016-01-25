@@ -12,32 +12,30 @@ article{
   background-color: #fdfdfd;
   position: absolute;
   margin: 200px;
+  font-family: 'Open Sans', sans-serif;
 }
 article header{
   padding:25px;
 }
 article h1{
-  font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   color: #0B1D26;
   margin: 0px;
 }
 article h2{
-  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #0B1D26;
   margin: 0px;
   padding-left: 5px;
 }
 article h3{
-  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   color: #0B1D26;
   margin: 0px;
   padding-left: 5px;
 }
 article p{
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
 }
 .blog-text{
@@ -45,6 +43,12 @@ article p{
 }
 .tab{
   padding-left: 30px;
+}
+td{
+  vertical-align: top;
+}
+td img{
+  max-width: 500px;
 }
 article footer{
   background-color: #fdfdfd;
