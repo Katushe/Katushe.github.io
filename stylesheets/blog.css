@@ -50,7 +50,7 @@ td{
 td img{
   max-width: 500px;
 }
-h2{
+.centered{
   text-align: center;
   padding: 20px;
 }
