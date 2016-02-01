@@ -16,6 +16,9 @@ table{
   top:100px;
   left:100px;
 }
+td a{
+  font-size: 15px;
+}
 td{
   display: inline-block;
   text-align: center;
