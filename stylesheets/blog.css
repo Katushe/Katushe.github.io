@@ -50,6 +50,27 @@ td{
 td img{
   max-width: 500px;
 }
+h2{
+  text-align: center;
+  padding: 20px;
+}
+.sort-img{
+  max-height: 350px;
+  padding-left: 150px;
+}
+.big-img{
+  padding-left: 240px;
+}
+.snippet{
+  color: #255F7F;
+  background: none;
+}
+.external-link{
+  color: #255F7F;
+  text-transform: lowercase;
+  font-size: 14px;
+  padding: 0px;
+}
 article footer{
   background-color: #fdfdfd;
   float: right;

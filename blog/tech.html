@@ -33,42 +33,43 @@
         <h3>January 30, 2015</h3>
       </header>
 
-      <img class = "box-img" src="../imgs/margins-borders-padding.gif" alt = "box model diagram" height= "373" width= "517">
+
       <div class = "blog-text">
         <p class = "tab">
-          Every element in an html document has a box around it. Inside this box is the element’s content, padding, border, and margins. This is referred to as the Box Model, which is pictured in the image above. The padding and margins are visible only as space between content and elements.
+          Sorting is putting a list of objects in order, usually numbers that you want to order from smallest to largest. There are many different algorithms with differing complexity and efficiency. Here I will cover merge sort, quick sort, and bubble sort.
+        </p>
+        <h2>Merge sort</h2>
+        <img class ="sort-img big-img" src="../imgs/Merge-Sort.png" alt = "merge sort diagram">
+        <p class = "tab">
+          Merge sort is a recursive algorithm, meaning it calls itself with smaller input values. Merge sort first divides the unsorted list in half, then keeps dividing it up into smaller lists until each item is on its own. Then it joins them back up in the right order. Merge sort is good for large lists as it does not have to traverse the whole list multiple times.
+        </p>
+        <h2>Quick sort</h2>
+        <img class ="sort-img big-img" src="../imgs/Quick-Sort.png" alt = "quick sort diagram">
+        <p class = "tab">
+          Quick sort is also a recursive algorithm. With quick sort you choose a "pivot" value to start with-usually you choose the middle value. You then set indices on either side of the pivot and compare their values to the pivot value, if they are on the wrong side, you swap the two values, then move on to the next values until the left index surpasses the right index. You then divide the list in two at that point and use quick sort on each sub-list, and keep doing that until its sorted, then join them back up. Quick sort can be even faster than merge sort when dealing with large lists.
+        </p>
+        <h2>Bubble sort</h2>
+        <img class ="sort-img" src="../imgs/Bubble-Sort.jpg" alt = "bubble sort diagram">
+        <p class = "tab">
+          Bubble sort goes through the list and compares each item with the one next to it, and swaps them into the correct order. For Example, if you had 8 and 3 next to each other, it would swap them so that 3 comes before 8. It then moves on to the next item, and so on until it reaches the end of the list. It will then move back to the front of the list and do the comparisons again, until it can go through the whole list without making any swaps. This algorithm is better for short lists, where traversing the whole list multiple times won't take too long. It's very inefficient for large lists, because traversing them multiple times will take a long time. <br><br>
+
+          <!-- Here is some pseudocode for how bubblesort would be written:<br>
+          <pre><code class = "snippet tab">procedure bubbleSort( A : list of sortable items ) defined as:
+          do
+            swapped := false
+            for each i in 0 to length(A) - 2 inclusive do:
+              if A[i] > A[i+1] then
+                swap( A[i], A[i+1] )
+                swapped := true
+              end if
+            end for
+          while swapped
+        end procedure
+          </code></pre> -->
         </p>
         <p class = "tab">
-          In the center of the box is the content area, which will contain the actual content of your element . This will be text, images, etc. The size will be determined by the size of your content, which you can either specify in your CSS or use the defaults set by your browser.
-        </p>
-        <p class = "tab">
-          Next comes the padding, which creates an area around the content of the element. The padding is transparent and only serves to create space between the content and it’s border, but if you have a background color or background image applied to your content, it will affect the padding as well.
-        </p>
-        <p class = "tab">
-          Then comes the border, which is an edge that goes around your content and it’s padding. This is considered the outside edge of the element. The border can also be transparent, but you can assign it a color separate from your content, and you can define a style for it, including but not limited to solid, dotted, dashed, and double.
-        </p>
-        <p class = "tab">
-          Last is the margin, which creates an area around the border of the element. The margin is transparent and serves to create space between different elements on the page. It is not considered to be part of the element itself, and thus will not be affected by the background color of the content, and you cannot give it its own color.
-        </p>
-        <p class = "tab">
-          While they both serve to create space, margins are used to make space between sibling elements that are next to/ above or below each other on the page and padding is used to create space between an element and its parent.
-        </p><br>
-        <p class = "tab">
-          Both padding and margins can be set in multiple ways. And you can use different kinds of units, such as pixels, percents, or ems.
-        </p><br>
-        <p class = "tab">
-          You can set the margins all around to the same value at once.<br><br>
-          <code>padding: 30px <br> margins:40px</code>
-        </p><br>
-        <p class = "tab">
-          You can set each side to a different value in one line. It goes in order of top, right, bottom, left.<br><br>
-          <code>padding: 30px 0 10px 0 <br> margins:40px 50px 45px 20px</code>
-        </p><br>
-        <p class = "tab">
-          You can also set each side individually.<br><br>
-          <code>padding-top:5px<br> padding-right:15px <br> padding-bottom:20px <br> padding-left:10px<br>
-            margin-top:10px<br> margin-right:20px <br> margin-bottom:30px <br> margin-left:50px
-          </code>
+          For an additional reference, check out these videos using folk dance to illustrate different sorting algorithms. Click
+          <a class = "external-link" href="https://www.youtube.com/user/AlgoRythmics/videos">here</a>.
         </p>
 
       </div>
