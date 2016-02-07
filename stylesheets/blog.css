@@ -6,6 +6,14 @@ body{
   position: relative;
   left:450px;
 }
+.box-img{
+  position: relative;
+  left:250px;
+}
+code{
+  color:#f37cae;
+  background-color: #e3e3e3;
+}
 article{
   border:2px solid rgba(128, 128, 128, 0.08);
   width: 1000px;
