@@ -34,43 +34,43 @@
         </div>
       </div>
     </nav>
-    <article>
 
-      <header>
-        <h1>Enumerable Method: Map</h1>
-        <h2>DBC Phase 0 Week 5</h2>
-        <h3>January 9, 2016</h3>
-      </header>
-
-      <div class = "blog-text">
-        <p class = "tab">
-        "Enumerable" is both a module, meaning its a group of methods packaged together, and a mixin, meaning it can be used in other classes such as arrays and hashes. It is comprised of enumerable methods, which are methods that allow for traversing through and searching objects.
-        </p>
-
-        <p class = "tab">
-        One of these methods is <code>map</code>. It has both a non-destructive(plain old <code>map</code>) and destructive(<code>map!</code>) version. This means that <code>map</code> will create a copy of the array you call it on, so the original array is not affected by the method, while <code>map!</code> will modify the original array, so it won't exist in its original form anymore.
-        </p>
-        <p class = "tab">
-        <code>Map</code> is used to transform an array. When you call the map method, it will be followed by a code block in which you specify the change you would like to make to the elements in the array. Map will then iterate through the array and apply that change to each element.
-        </p>
-        <p class ="tab">
-          For example, say you have an array of integers and would like to multiply each integer by 2. Within the block, you declare a temporary variable for the current element, then specify that you want to multiply it by 2.
-        </p>
-        <img class = "tab" src="../imgs/map_example.png" alt = "map code">
-        <p class = "tab">
-          Now, <code>nums</code> will still have the original values, <code>[2,5,9,15]</code>, while <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
-        </p>
-        <img class = "tab" src="../imgs/map_destructive.png" alt = "map code">
-        <p class ="tab">
-          If you use the destructive version, <code>map!</code> then both <code>nums</code> and <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
-        </p>
-
-
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <article>
+            <header>
+              <h1>Enumerable Method: Map</h1>
+              <h2>DBC Phase 0 Week 5</h2>
+              <h3>January 9, 2016</h3>
+            </header>
+            <div class = "blog-text">
+              <p class = "tab">
+              "Enumerable" is both a module, meaning its a group of methods packaged together, and a mixin, meaning it can be used in other classes such as arrays and hashes. It is comprised of enumerable methods, which are methods that allow for traversing through and searching objects.
+              </p>
+              <p class = "tab">
+              One of these methods is <code>map</code>. It has both a non-destructive(plain old <code>map</code>) and destructive(<code>map!</code>) version. This means that <code>map</code> will create a copy of the array you call it on, so the original array is not affected by the method, while <code>map!</code> will modify the original array, so it won't exist in its original form anymore.
+              </p>
+              <p class = "tab">
+              <code>Map</code> is used to transform an array. When you call the map method, it will be followed by a code block in which you specify the change you would like to make to the elements in the array. Map will then iterate through the array and apply that change to each element.
+              </p>
+              <p class ="tab">
+                For example, say you have an array of integers and would like to multiply each integer by 2. Within the block, you declare a temporary variable for the current element, then specify that you want to multiply it by 2.
+              </p>
+              <img class = "tab" src="../imgs/map_example.png" alt = "map code">
+              <p class = "tab">
+                Now, <code>nums</code> will still have the original values, <code>[2,5,9,15]</code>, while <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
+              </p>
+              <img class = "tab" src="../imgs/map_destructive.png" alt = "map code">
+              <p class ="tab">
+                If you use the destructive version, <code>map!</code> then both <code>nums</code> and <code>nums_times_two</code> will have the transformed values of <code>[4,10,18,30]</code>.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
+    </div>
 
-
-    </article>
     <footer class ="page-footer">
         <div class ="contact">
             <ul>

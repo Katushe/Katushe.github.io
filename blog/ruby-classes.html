@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class = "wrap">
+    <div class="wrap">
       <nav class="navbar navbar-default navbar-custom navbar-static-top ">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -27,61 +27,64 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class = "nav-item"><a href="/index">Home</a></li>
-            <li class = "nav-item"><a href="/projects">Projects</a></li>
-            <li class = "nav-item"><a href="/blog">Blog</a></li>
-            <li class = "nav-item"><a href="/resume">Resume</a></li>
+            <li class="nav-item"><a href="/index">Home</a></li>
+            <li class="nav-item"><a href="/projects">Projects</a></li>
+            <li class="nav-item"><a href="/blog">Blog</a></li>
+            <li class="nav-item"><a href="/resume">Resume</a></li>
           </ul>
         </div>
       </div>
     </nav>
-      <article>
 
-        <header>
-          <h1>Ruby Classes</h1>
-          <h2>DBC Phase 0 Week 6</h2>
-          <h3>January 16, 2015</h3>
-        </header>
-
-        <div class = "blog-text">
-          <p class = "tab">
-          Ruby is an object-oriented language, and classes are a part of what makes objects possible. A class is a blueprint used to create individual objects. Objects of a certain class will have methods/variables associated with that class. Things like strings, arrays, etc are considered classes, but you can also define your own classes.
-          In Ruby, here is how we would define a class to create dog objects: <br><br>
-          <img class = "tab" src="../imgs/class_def.png" alt = "Class definition code">
-          </p>
-          <p class = "tab">
-          Some of the characteristics a dog can have are a name and a breed. These can be used to tell different dogs apart. In Ruby, these characteristics would be instance variables, which are variables that are associated with a particular instance of the class. Instance variables are available across methods for that instance and are differentiated from other variables with an <code>@</code> sign. In our example, every dog will have these charateristics, but they won't necessarily have the same values for them. <br><br>
-          A class definition needs an initialize method to be able to create new instances of the class. This method will be invoked when class_name.new is called outside of the class. Within this method is usually where you would assign the instance variables.
-          </p>
-          <img class = "tab" src="../imgs/initialization.png" alt = "defining initialize code">
-          <p class = "tab">
-          Ruby classes can also have methods associated with them, which can then be called on an instance of the class. These are defined as you would define any other Ruby method, but can only be used in association with an object of that type of class.<br><br>
-          Here are some examples of defining methods within a class:
-          </p>
-          <img class = "tab" src="../imgs/methods.png" alt = "defining methods code">
-          <p class = "tab">
-          After you have finished defining the method, you can create new instances outside of the class and use the methods on that class.<br><br>
-          This is how you would create a new Dog and call its methods:
-          </p>
-          <img class = "tab" src="../imgs/creating_new.png" alt = "creating new instance outside class code">
-          <p class = "tab">
-          This is what the above code would output to the console:
-          </p>
-          <img class = "tab" src="../imgs/output.png" alt = "output for new instance">
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <article>
+            <header>
+              <h1>Ruby Classes</h1>
+              <h2>DBC Phase 0 Week 6</h2>
+              <h3>January 16, 2015</h3>
+            </header>
+            <div class="blog-text">
+              <p class="tab">
+              Ruby is an object-oriented language, and classes are a part of what makes objects possible. A class is a blueprint used to create individual objects. Objects of a certain class will have methods/variables associated with that class. Things like strings, arrays, etc are considered classes, but you can also define your own classes.
+              In Ruby, here is how we would define a class to create dog objects: <br>
+              </p>
+              <img class="tab img-responsive" src="../imgs/class_def.png" alt="Class definition code">
+              <p class="tab">
+              Some of the characteristics a dog can have are a name and a breed. These can be used to tell different dogs apart. In Ruby, these characteristics would be instance variables, which are variables that are associated with a particular instance of the class. Instance variables are available across methods for that instance and are differentiated from other variables with an <code>@</code> sign. In our example, every dog will have these charateristics, but they won't necessarily have the same values for them. <br><br>
+              A class definition needs an initialize method to be able to create new instances of the class. This method will be invoked when class_name.new is called outside of the class. Within this method is usually where you would assign the instance variables.
+              </p>
+              <img class="tab img-responsive" src="../imgs/initialization.png" alt="defining initialize code">
+              <p class="tab">
+              Ruby classes can also have methods associated with them, which can then be called on an instance of the class. These are defined as you would define any other Ruby method, but can only be used in association with an object of that type of class.<br><br>
+              Here are some examples of defining methods within a class:
+              </p>
+              <img class="tab img-responsive" src="../imgs/methods.png" alt="defining methods code">
+              <p class="tab">
+              After you have finished defining the method, you can create new instances outside of the class and use the methods on that class.<br><br>
+              This is how you would create a new Dog and call its methods:
+              </p>
+              <img class="tab img-responsive" src="../imgs/creating_new.png" alt="creating new instance outside class code">
+              <p class="tab">
+              This is what the above code would output to the console:
+              </p>
+              <img class="tab img-responsive" src="../imgs/output.png" alt="output for new instance">
+            </div>
+          </article>
         </div>
+      </div>
+    </div>
 
-
-      </article>
-      <footer class ="page-footer">
-          <div class ="contact">
-              <ul>
-                <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
-                <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
-                <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-              </ul>
-          </div>
-        </footer>
+    <footer class="page-footer">
+        <div class="contact">
+            <ul>
+              <li class="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+              <li class="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
+              <li class="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            </ul>
+        </div>
+      </footer>
     </div>
   </body>
 

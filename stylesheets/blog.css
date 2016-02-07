@@ -6,20 +6,25 @@ body{
   position: relative;
   left:450px;
 }
+img{
+  padding: 2%;
+}
 .box-img{
   position: relative;
   left:250px;
 }
 code{
-  color:#f37cae;
+  color:#255F7F;
   background-color: #e3e3e3;
 }
 article{
+  margin-top:5%;
+  margin-bottom: 10%;
   border:2px solid rgba(128, 128, 128, 0.08);
-  width: 1000px;
   background-color: #fdfdfd;
-  position: absolute;
-  margin: 200px;
+  /*width: 1000px;*/
+  /*position: absolute;
+  margin: 200px;*/
   font-family: 'Open Sans', sans-serif;
 }
 article header{
@@ -43,14 +48,13 @@ article h3{
   padding-left: 5px;
 }
 article p{
-
   font-size: 14px;
 }
 .blog-text{
   padding:50px;
 }
 .tab{
-  padding-left: 30px;
+  padding-left: 2%;
 }
 td{
   vertical-align: top;
@@ -64,11 +68,11 @@ td img{
 }
 .sort-img{
   max-height: 350px;
-  padding-left: 150px;
+  /*padding-left: 25%;*/
+  display:block;
+  margin:auto;
 }
-.big-img{
-  padding-left: 240px;
-}
+
 .snippet{
   color: #255F7F;
   background: none;

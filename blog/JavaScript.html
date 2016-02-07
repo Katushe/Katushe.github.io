@@ -26,83 +26,90 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class = "nav-item"><a href="/index">Home</a></li>
-            <li class = "nav-item"><a href="/projects">Projects</a></li>
-            <li class = "nav-item"><a href="/blog">Blog</a></li>
-            <li class = "nav-item"><a href="/resume">Resume</a></li>
+            <li class="nav-item"><a href="/index">Home</a></li>
+            <li class="nav-item"><a href="/projects">Projects</a></li>
+            <li class="nav-item"><a href="/blog">Blog</a></li>
+            <li class="nav-item"><a href="/resume">Resume</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <article>
 
-      <header>
-        <h1>JavaScript vs Ruby</h1>
-        <h2>DBC Phase 0 Week 7</h2>
-        <h3>January 23, 2015</h3>
-      </header>
-      <div class = "blog-text">
-        <p class = "tab">
-        When learning a new programming language, it can be helpful to draw parallels to languages you are already familiar with, and to identify the similarities/differences. Here we will compare Ruby classes to JavaScript contructor functions. They are both used to create "objects". However, the idea of an object is different in Ruby vs. JavaScript. In Ruby, everything is an object-strings, arrays, methods, even classes- you name it, and it is an object. Classes are then used as a blueprint to create instances of an object of a certain type. In JavaScript, objects are more analogous to Ruby's hashes. Essentially, they are a way to store properties in the form of key/value pairs, and they are their own distinct data type. Constructors are also used as a blueprint to create objects of a certain type.
-        <br><br>
-        <p class = "tab">
-        Let's look at what class declaration in Ruby looks like, versus constructor declaration in JavaScript. Both of the following pieces of code will allow you to create a Dog object.
-        </p>
-        <table>
-          <tr>
-            <th>Ruby Class</th>
-            <th>JavaScript Constructor</th>
-          </tr>
-          <tr>
-            <td>
-              <img class = "tab" src="../imgs/methods.png" alt = "class code">
-            </td>
-            <td>
-              <img class = "tab" src="../imgs/constructor.png" alt = "constructor code">
-            </td>
-          </tr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <article>
+            <header>
+              <h1>JavaScript vs Ruby</h1>
+              <h2>DBC Phase 0 Week 7</h2>
+              <h3>January 23, 2015</h3>
+            </header>
+            <div class="blog-text">
+              <p class="tab">
+              When learning a new programming language, it can be helpful to draw parallels to languages you are already familiar with, and to identify the similarities/differences. Here we will compare Ruby classes to JavaScript contructor functions. They are both used to create "objects". However, the idea of an object is different in Ruby vs. JavaScript. In Ruby, everything is an object-strings, arrays, methods, even classes- you name it, and it is an object. Classes are then used as a blueprint to create instances of an object of a certain type. In JavaScript, objects are more analogous to Ruby's hashes. Essentially, they are a way to store properties in the form of key/value pairs, and they are their own distinct data type. Constructors are also used as a blueprint to create objects of a certain type.
+              <br><br>
+              <p class="tab">
+              Let's look at what class declaration in Ruby looks like, versus constructor declaration in JavaScript. Both of the following pieces of code will allow you to create a Dog object.
+              </p>
+              <table class="tab">
+                <tr>
+                  <th>Ruby Class</th>
+                  <th>JavaScript Constructor</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="tab img-responsive" src="../imgs/methods.png" alt="class code">
+                  </td>
+                  <td>
+                    <img class="tab img-responsive" src="../imgs/constructor.png" alt="constructor code">
+                  </td>
+                </tr>
 
-        </table>
-        <p class = "tab">
-        Here you can see that the constructor function is similar to the initialize method within a constructor. Both are used to assign variables to that particular Dog object, and to give them the values that are passed in. However, the assignment is a bit different. Ruby uses the <code>@</code> symbol to sygnify that these are instance variables. JavaScript on the other hand uses the keyword <code>this</code> which is used to refer to the current object you are constructing.
-        </p>
-        <p class = "tab">
-        You can also see one of the differences between the two. A Ruby class will also usually include methods for that object type. When you create a new Dog object in Ruby, you will also be able to use the <code>info</code>, <code>talk</code>, and <code>play</code> methods on it. This is technically allowed in JavaScript as well-you can add a property to the Dog constructor that is a function, however this is not recommended in most cases. If a function is included in a constuctor, it is re-declared each time you use the constructor to create a new object, which can cause memory issues down the line. What you want to do is declare a function once, and then have it associated with any object of that type-this is done through prototypes. Prototypes are a bit beyond the scope of this post, but I suggest you look into it if interested.
-        </p>
-        <p class = "tab">
-        Another difference is the way you declare a new object after defining a class in Ruby or a constructor in JavaScript. The code below demonstrates how to to it in each language.
-        </p>
-        <table>
-          <tr>
-            <th>Ruby</th>
-            <th>JavaScript</th>
-          </tr>
-          <tr>
-            <td>
-              <img class = "tab" src="../imgs/new_Ruby.png" alt = "new object code">
-            </td>
-            <td>
-              <img class = "tab" src="../imgs/new_JS.png" alt = "new object code">
-            </td>
-          </tr>
+              </table>
+              <p class="tab">
+              Here you can see that the constructor function is similar to the initialize method within a constructor. Both are used to assign variables to that particular Dog object, and to give them the values that are passed in. However, the assignment is a bit different. Ruby uses the <code>@</code> symbol to sygnify that these are instance variables. JavaScript on the other hand uses the keyword <code>this</code> which is used to refer to the current object you are constructing.
+              </p>
+              <p class="tab">
+              You can also see one of the differences between the two. A Ruby class will also usually include methods for that object type. When you create a new Dog object in Ruby, you will also be able to use the <code>info</code>, <code>talk</code>, and <code>play</code> methods on it. This is technically allowed in JavaScript as well-you can add a property to the Dog constructor that is a function, however this is not recommended in most cases. If a function is included in a constuctor, it is re-declared each time you use the constructor to create a new object, which can cause memory issues down the line. What you want to do is declare a function once, and then have it associated with any object of that type-this is done through prototypes. Prototypes are a bit beyond the scope of this post, but I suggest you look into it if interested.
+              </p>
+              <p class="tab">
+              Another difference is the way you declare a new object after defining a class in Ruby or a constructor in JavaScript. The code below demonstrates how to to it in each language.
+              </p>
+              <table class="tab">
+                <tr>
+                  <th>Ruby</th>
+                  <th>JavaScript</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="tab img-responsive" src="../imgs/new_Ruby.png" alt="new object code">
+                  </td>
+                  <td>
+                    <img class="tab img-responsive" src="../imgs/new_JS.png" alt="new object code">
+                  </td>
+                </tr>
 
-        </table>
+              </table>
 
 
+            </div>
+            <!-- <footer>
+              <a href = "#">tag 1</a>
+              <a href = "#">tag 2</a>
+              <a href = "#">tag 3</a>
+            </footer> -->
+
+          </article>
+        </div>
       </div>
-      <!-- <footer>
-        <a href = "#">tag 1</a>
-        <a href = "#">tag 2</a>
-        <a href = "#">tag 3</a>
-      </footer> -->
+    </div>
 
-    </article>
-    <footer class ="page-footer">
-        <div class ="contact">
+    <footer class="page-footer">
+        <div class="contact">
             <ul>
-              <li class ="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
-              <li class ="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
-              <li class ="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+              <li class="contact-method"><a href="mailto:kathryn.garbacz@gmail.com?" target="_top"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+              <li class="contact-method"><a href="https://github.com/Katushe"><i class="fa fa-github fa-lg"></i></a></li>
+              <li class="contact-method"><a href="https://www.linkedin.com/in/kathryn-garbacz-73459a58"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
             </ul>
         </div>
       </footer>
