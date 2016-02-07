@@ -18,9 +18,10 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
    background-color:#fff;
 }
-th  {
-    background-color: black;
-    color: white;
+th {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .method{
