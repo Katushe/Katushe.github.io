@@ -1,13 +1,4 @@
-
-main img{
-  display: inline-block;
-  position: absolute;
-  top: 50px;
-  left:200px;
-  border: 1px solid #D4D4D4;
-}
 main h3, p{
-  position: relative;
   font-family: 'Open Sans', sans-serif;
   color: #0B1D26;
 }
@@ -19,9 +10,13 @@ main p{
   font-size: 12pt;
 }
 .text{
-  position: relative;
-  top:120px;
-  left:600px;
-  width:400px;
   text-align: center;
+}
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
 }
