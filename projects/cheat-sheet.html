@@ -52,11 +52,10 @@
                   </tr>
                   <tr>
                     <td class="method">all?</td>
-                    <td class = "code">
+                    <td class = "example">
                       <pre><code>arr = ["ant", "bear", "cat"]
-
-      arr.all? { |word|
-        word.length >= 3 }
+arr.all? { |word|
+  word.length >= 3 }
                     </code></pre>
                       <p class="output">=> true</p>
                     </td>
@@ -66,11 +65,11 @@
                   </tr>
                   <tr>
                     <td class="method">any?</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["ant", "bear", "cat"]
 
-      arr.any? { |word|
-        word.length >= 3 } </code></pre>
+arr.any? { |word|
+  word.length >= 3 } </code></pre>
                       <p class="output">=> true</p>
                     </td>
                     <td class="desc">
@@ -79,9 +78,9 @@
                   </tr>
                   <tr>
                     <td class="method">count</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = [1, 2, 4, 2]
-      arr.count </code></pre>
+arr.count </code></pre>
                       <p class="output">=> 4</p>
                     </td>
                     <td class="desc">
@@ -90,9 +89,9 @@
                   </tr>
                   <tr>
                     <td class="method">cycle</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["a", "b", "c"]
-      arr.cycle(2) { |x| puts x }</code></pre>
+arr.cycle(2) { |x| puts x }</code></pre>
                       <p class="output">print, a, b, c, a, b, c.</p>
                     </td>
                     <td class="desc">
@@ -101,9 +100,9 @@
                   </tr>
                   <tr>
                     <td class="method">find</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..100).find { |i|
-        i % 5 == 0 and i % 7 == 0 }</code></pre>
+i % 5 == 0 and i % 7 == 0 }</code></pre>
                       <p class="output">=> 35</p>
                     </td>
                     <td class="desc">
@@ -112,9 +111,9 @@
                   </tr>
                   <tr>
                     <td class="method">drop</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = [1, 2, 3, 4, 5, 0]
-      arr.drop(3)</code></pre>
+arr.drop(3)</code></pre>
                       <p class="output">=> [4, 5, 0]</p>
                     </td>
                     <td class="desc">
@@ -123,7 +122,7 @@
                   </tr>
                   <tr>
                     <td class="method">each_slice</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..10).each_slice(3) { |a| p a }</code></pre>
                       <p class="output">=><br>
                         [1, 2, 3]<br>
@@ -137,13 +136,13 @@
                   </tr>
                   <tr>
                     <td class="method">each_with_index</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>hash = Hash.new
-      arr =["cat", "dog", "wombat")
-      arr.each_with_index { |item, index|
-        hash[item] = index
-      }
-      hash </code></pre>
+arr =["cat", "dog", "wombat")
+arr.each_with_index { |item, index|
+  hash[item] = index
+}
+hash </code></pre>
                       <p class="output">=> {"cat"=>0, "dog"=>1, "wombat"=>2}</p>
                     </td>
                     <td class="desc">
@@ -152,7 +151,7 @@
                   </tr>
                   <tr>
                     <td class="method">find_all</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..10).find_all { |i|  i % 3 == 0 }</code></pre>
                       <p class="output">=> [3, 6, 9]</p>
                     </td>
@@ -162,9 +161,9 @@
                   </tr>
                   <tr>
                     <td class="method">find_index</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..100).find_index {
-        |i| i % 5 == 0 and i % 7 == 0 }</code></pre>
+|i| i % 5 == 0 and i % 7 == 0 }</code></pre>
                       <p class="output">=> 34</p>
                     </td>
                     <td class="desc">
@@ -173,7 +172,7 @@
                   </tr>
                   <tr>
                     <td class="method">first </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>%w[foo bar baz].first</code></pre>
                       <p class="output">=> "foo"</p>
                       <pre><code>%w[foo bar baz].first(2)</code></pre>
@@ -185,7 +184,7 @@
                   </tr>
                   <tr>
                     <td class="method">group_by </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..6).group_by { |i| i%3 } </code></pre>
                       <p class="output">=>{0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</p>
                     </td>
@@ -195,7 +194,7 @@
                   </tr>
                   <tr>
                     <td class="method">inject/reduce</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(5..10).reduce(:+) </code></pre>
                       <p class="output">=> 45</p>
                       <pre><code>(5..10).inject { |sum, n| sum + n }</code></pre>
@@ -207,7 +206,7 @@
                   </tr>
                   <tr>
                     <td class="method">map</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..4).map { |i| i*i } </code></pre>
                       <p class="output">=> [1, 4, 9, 16]</p>
                     </td>
@@ -217,9 +216,9 @@
                   </tr>
                   <tr>
                     <td class="method">max</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.max</code></pre>
+arr.max</code></pre>
                       <p class="output">=> "horse"</p>
                       <pre><code>arr.max { |a, b| a.length <=> b.length }</code></pre>
                       <p class="output">=> "albatross"</p>
@@ -230,9 +229,9 @@
                   </tr>
                   <tr>
                     <td class="method">max_by</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.max_by { |x| x.length } </code></pre>
+arr.max_by { |x| x.length } </code></pre>
                       <p class="output">=> "albatross"</p>
                     </td>
                     <td class="desc">
@@ -241,9 +240,9 @@
                   </tr>
                   <tr>
                     <td class="method">min </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.min</code></pre>
+arr.min</code></pre>
                       <p class="output">=> "albatross"</p>
                       <pre><code>arr.min { |a, b| a.length <=> b.length }</code></pre>
                       <p class="output">=> "dog"</p>
@@ -254,9 +253,9 @@
                   </tr>
                   <tr>
                     <td class="method">min_by</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.max_by { |x| x.length }</code></pre>
+arr.max_by { |x| x.length }</code></pre>
                       <p class="output">=> "dog"</p>
                     </td>
                     <td class="desc">
@@ -265,9 +264,9 @@
                   </tr>
                   <tr>
                     <td class="method">minmax </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.minmax  </code></pre>
+arr.minmax  </code></pre>
                       <p class="output">=> ["albatross", "horse"]</p>
                     </td>
                     <td class="desc">
@@ -276,9 +275,9 @@
                   </tr>
                   <tr>
                     <td class="method">minmax_by</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["albatross", "dog", "horse"]
-      arr.minmax_by { |x| x.length }</code></pre>
+arr.minmax_by { |x| x.length }</code></pre>
                       <p class="output">=> ["dog", "albatross"]</p>
                     </td>
                     <td class="desc">
@@ -287,9 +286,9 @@
                   </tr>
                   <tr>
                     <td class="method">none?</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["ant", "bear", "cat"]
-      arr..none? { |word| word.length == 5 } </code></pre>
+arr..none? { |word| word.length == 5 } </code></pre>
                       <p class="output">=>true</p>
                     </td>
                     <td class="desc">
@@ -298,9 +297,9 @@
                   </tr>
                   <tr>
                     <td class="method">one? </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["ant", "bear", "cat"]
-      arr.one? { |word| word.length == 4 }</code></pre>
+arr.one? { |word| word.length == 4 }</code></pre>
                       <p class="output">=>true</p>
                     </td>
                     <td class="desc">
@@ -309,7 +308,7 @@
                   </tr>
                   <tr>
                     <td class="method">partition</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..6).partition { |v| v.even? }</code></pre>
                       <p class="output">=>[[2, 4, 6], [1, 3, 5]]</p>
                     </td>
@@ -319,7 +318,7 @@
                   </tr>
                   <tr>
                     <td class="method">reject</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>[1, 2, 3, 4, 5].reject { |num| num.even? }</code></pre>
                       <p class="output">=> [1, 3, 5]</p>
                     </td>
@@ -329,7 +328,7 @@
                   </tr>
                   <tr>
                     <td class="method">reverse_each</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..3).reverse_each { |v| p v }</code></pre>
                       <p class="output">=> <br>
                         3<br>
@@ -342,7 +341,7 @@
                   </tr>
                   <tr>
                     <td class="method">select</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>[1,2,3,4,5].select { |num|  num.even?  }</code></pre>
                       <p class="output">=>[2, 4]</p>
                     </td>
@@ -352,9 +351,9 @@
                   </tr>
                   <tr>
                     <td class="method">sort</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr =["rhea", "kea", "flea")
-      arr.sort</code></pre>
+arr.sort</code></pre>
                       <p class="output">=> ["flea", "kea", "rhea"]</p>
                     </td>
                     <td class="desc">
@@ -363,9 +362,9 @@
                   </tr>
                   <tr>
                     <td class="method">sort_by </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = ["apple", "pear", "fig"}
-      arr.sort_by { |word| word.length}</code></pre>
+arr.sort_by { |word| word.length}</code></pre>
                       <p class="output">=> ["fig", "pear", "apple"]</p>
                     </td>
                     <td class="desc">
@@ -374,9 +373,9 @@
                   </tr>
                   <tr>
                     <td class="method">take</td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = [1, 2, 3, 4, 5, 0]
-      arr.take(3)   </code></pre>
+arr.take(3)   </code></pre>
                       <p class="output">=> [1, 2, 3]</p>
                     </td>
                     <td class="desc">
@@ -385,9 +384,9 @@
                   </tr>
                   <tr>
                     <td class="method">take_while </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>arr = [1, 2, 3, 4, 5, 0]
-      arr.take_while { |i| i < 3 }</code></pre>
+arr.take_while { |i| i < 3 }</code></pre>
                       <p class="output">=> [1, 2]</p>
                     </td>
                     <td class="desc">
@@ -396,7 +395,7 @@
                   </tr>
                   <tr>
                     <td class="method">to_a </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>(1..7).to_a</code></pre>
                       <p class="output">=> [1, 2, 3, 4, 5, 6, 7]</p>
                       <pre><code>{ 'a'=>1, 'b'=>2, 'c'=>3 }.to_a</code></pre>
@@ -408,7 +407,7 @@
                   </tr>
                   <tr>
                     <td class="method">to_h </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>%i[hello world].each_with_index.to_h</code></pre>
                       <p class="output">=> {:hello => 0, :world => 1}</p>
                     </td>
@@ -418,10 +417,10 @@
                   </tr>
                   <tr>
                     <td class="method">zip </td>
-                    <td class="code">
+                    <td class="example">
                       <pre><code>a = [ 4, 5, 6 ]
-      b = [ 7, 8, 9 ]
-      a.zip(b) </code></pre>
+b = [ 7, 8, 9 ]
+a.zip(b) </code></pre>
                       <p class="output">=> [[4, 7], [5, 8], [6, 9]]</p>
                     </td>
                     <td class="desc">
