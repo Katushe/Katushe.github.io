@@ -33,6 +33,14 @@ body{
 .navbar .navbar-collapse {
     text-align: center;
 }
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin-right:-4px;
+}
 a{
   text-decoration: none;
   text-transform: uppercase;
@@ -45,8 +53,8 @@ a{
   bottom:0;
   left:0;
   right: 0;
-  width:100%;
-  background-color: #255F7F;
+/*  width:100%;
+*/  background-color: #255F7F;
   position: fixed;
   clear: both;
   height: 35px;

@@ -35,61 +35,64 @@
         </div>
       </div>
     </nav>
-    <article>
 
-      <header>
-        <h1>Sorting Algorithms</h1>
-        <h2>DBC Phase 0 Week 8</h2>
-        <h3>January 30, 2015</h3>
-      </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <article>
+            <header>
+              <h1>Sorting Algorithms</h1>
+              <h2>DBC Phase 0 Week 8</h2>
+              <h3>January 30, 2015</h3>
+            </header>
+            <div class = "blog-text">
+              <p class = "tab">
+                Sorting is putting a list of objects in order, usually numbers that you want to order from smallest to largest. There are many different algorithms with differing complexity and efficiency. Here I will cover merge sort, quick sort, and bubble sort.
+              </p>
+              <h2 class = "centered">Merge sort</h2>
+              <img class ="sort-img img-responsive" src="../imgs/Merge-Sort.png" alt = "merge sort diagram">
+              <p class = "tab">
+                Merge sort is a recursive algorithm, meaning it calls itself with smaller input values. Merge sort first divides the unsorted list in half, then keeps dividing it up into smaller lists until each item is on its own. Then it joins them back up in the right order. Merge sort is good for large lists as it does not have to traverse the whole list multiple times.
+              </p>
+              <h2 class = "centered">Quick sort</h2>
+              <img class ="sort-img img-responsive" src="../imgs/Quick-Sort.png" alt = "quick sort diagram">
+              <p class = "tab">
+                Quick sort is also a recursive algorithm. With quick sort you choose a "pivot" value to start with-usually you choose the middle value. You then set indices on either side of the pivot and compare their values to the pivot value, if they are on the wrong side, you swap the two values, then move on to the next values until the left index surpasses the right index. You then divide the list in two at that point and use quick sort on each sub-list, and keep doing that until its sorted, then join them back up. Quick sort can be even faster than merge sort when dealing with large lists.
+              </p>
+              <h2 class = "centered">Bubble sort</h2>
+              <img class ="sort-img img-responsive" src="../imgs/Bubble-Sort.jpg" alt = "bubble sort diagram">
+              <p class = "tab">
+                Bubble sort goes through the list and compares each item with the one next to it, and swaps them into the correct order. For Example, if you had 8 and 3 next to each other, it would swap them so that 3 comes before 8. It then moves on to the next item, and so on until it reaches the end of the list. It will then move back to the front of the list and do the comparisons again, until it can go through the whole list without making any swaps. This algorithm is better for short lists, where traversing the whole list multiple times won't take too long. It's very inefficient for large lists, because traversing them multiple times will take a long time. <br><br>
 
-
-      <div class = "blog-text">
-        <p class = "tab">
-          Sorting is putting a list of objects in order, usually numbers that you want to order from smallest to largest. There are many different algorithms with differing complexity and efficiency. Here I will cover merge sort, quick sort, and bubble sort.
-        </p>
-        <h2 class = "centered">Merge sort</h2>
-        <img class ="sort-img big-img" src="../imgs/Merge-Sort.png" alt = "merge sort diagram">
-        <p class = "tab">
-          Merge sort is a recursive algorithm, meaning it calls itself with smaller input values. Merge sort first divides the unsorted list in half, then keeps dividing it up into smaller lists until each item is on its own. Then it joins them back up in the right order. Merge sort is good for large lists as it does not have to traverse the whole list multiple times.
-        </p>
-        <h2 class = "centered">Quick sort</h2>
-        <img class ="sort-img big-img" src="../imgs/Quick-Sort.png" alt = "quick sort diagram">
-        <p class = "tab">
-          Quick sort is also a recursive algorithm. With quick sort you choose a "pivot" value to start with-usually you choose the middle value. You then set indices on either side of the pivot and compare their values to the pivot value, if they are on the wrong side, you swap the two values, then move on to the next values until the left index surpasses the right index. You then divide the list in two at that point and use quick sort on each sub-list, and keep doing that until its sorted, then join them back up. Quick sort can be even faster than merge sort when dealing with large lists.
-        </p>
-        <h2 class = "centered">Bubble sort</h2>
-        <img class ="sort-img" src="../imgs/Bubble-Sort.jpg" alt = "bubble sort diagram">
-        <p class = "tab">
-          Bubble sort goes through the list and compares each item with the one next to it, and swaps them into the correct order. For Example, if you had 8 and 3 next to each other, it would swap them so that 3 comes before 8. It then moves on to the next item, and so on until it reaches the end of the list. It will then move back to the front of the list and do the comparisons again, until it can go through the whole list without making any swaps. This algorithm is better for short lists, where traversing the whole list multiple times won't take too long. It's very inefficient for large lists, because traversing them multiple times will take a long time. <br><br>
-
-          <!-- Here is some pseudocode for how bubblesort would be written:<br>
-          <pre><code class = "snippet tab">procedure bubbleSort( A : list of sortable items ) defined as:
-          do
-            swapped := false
-            for each i in 0 to length(A) - 2 inclusive do:
-              if A[i] > A[i+1] then
-                swap( A[i], A[i+1] )
-                swapped := true
-              end if
-            end for
-          while swapped
-        end procedure
-          </code></pre> -->
-        </p>
-        <p class = "tab">
-          For an additional reference, check out these videos using folk dance to illustrate different sorting algorithms. Click
-          <a class = "external-link" href="https://www.youtube.com/user/AlgoRythmics/videos">here</a>.
-        </p>
-
+                <!-- Here is some pseudocode for how bubblesort would be written:<br>
+                <pre><code class = "snippet tab">procedure bubbleSort( A : list of sortable items ) defined as:
+                do
+                  swapped := false
+                  for each i in 0 to length(A) - 2 inclusive do:
+                    if A[i] > A[i+1] then
+                      swap( A[i], A[i+1] )
+                      swapped := true
+                    end if
+                  end for
+                while swapped
+              end procedure
+                </code></pre> -->
+              </p>
+              <p class = "tab">
+                For an additional reference, check out these videos using folk dance to illustrate different sorting algorithms. Click
+                <a class = "external-link" href="https://www.youtube.com/user/AlgoRythmics/videos">here</a>.
+              </p>
+            </div>
+            <!--<footer>
+              <a href = "#">tag 1</a>
+              <a href = "#">tag 2</a>
+              <a href = "#">tag 3</a>
+            </footer>-->
+          </article>
+        </div>
       </div>
-      <!--<footer>
-        <a href = "#">tag 1</a>
-        <a href = "#">tag 2</a>
-        <a href = "#">tag 3</a>
-      </footer>-->
+    </div>
 
-    </article>
     <footer class ="page-footer">
         <div class ="contact">
             <ul>
