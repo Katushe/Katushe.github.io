@@ -79,17 +79,3 @@ td img{
   font-size: 14px;
   padding: 0px;
 }
-article footer{
-  background-color: #fdfdfd;
-  float: right;
-  padding: 20px;
-}
-article footer a{
-  color:#0B1D26;
-  text-transform: lowercase;
-  font-size: 12px;
-  padding: 0px 10px 0px 10px;
-}
-.page-footer{
-  height: 35px;
-}

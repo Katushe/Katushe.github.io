@@ -2,51 +2,36 @@ body{
   background-color: #A8D5FF;
   height: 100%;
 }
-.page-header{
-    top:0;
-    left:0;
-    height:125px;
-    width:100%;
-    position: absolute;
-  }
-.page-header h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    color: white;
-    top: 0;
-    left:30px;
-    text-shadow: 2px 2px 2px #000000;
- }
-.page-header img{
-    height:75px;
-    width:100%;
-  }
-ul{
+/*ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}*/
+.navbar-custom {
+    background-color:#255F7F;
+    color:#ffffff;
+    border: 0;
 }
-.nav-bar{
-  width: 100%;
-  top:75px;
-  left:0px;
-  height: 50px;
-  background-color: #255F7F;
-  position:absolute;
-  /*box-shadow: 1px 2px 2px rgba(0,0,0,0.10), 1px 1px 1px rgba(0,0,0,0.15);*/
-
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+    padding-left:30px;
+    padding-right:30px;
 }
-.nav-item{
-  float: right;
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
 }
-.nav-item a{
-  display: block;
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: #184054;
+    background-color: transparent;
 }
-.nav-item a:hover{
-  background-color: #0B1D26;
-  height: 38px;
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
 }
 a{
   text-decoration: none;
@@ -64,7 +49,7 @@ a{
   background-color: #255F7F;
   position: fixed;
   clear: both;
-  height: 50px;
+  height: 35px;
   text-align: center;
 }
 .contact{
