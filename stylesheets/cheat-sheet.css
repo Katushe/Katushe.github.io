@@ -11,7 +11,12 @@ table, th, td{
 th,td{
   padding: 15px;
 }
-
+td{
+  vertical-align: top;
+}
+td img{
+  max-width: 500px;
+}
 tr:nth-child(even) {
     background-color: #D1EEEE;
 }
@@ -29,9 +34,13 @@ th {
   text-align: center;
   vertical-align: middle;
 }
-.code{
+.example{
   vertical-align: middle;
   padding: 0 25px;
+}
+pre code{
+  white-space: pre;
+  color: #255F7F;
 }
 .output{
   color: #255F7F;
