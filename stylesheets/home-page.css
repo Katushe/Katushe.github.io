@@ -1,3 +1,10 @@
+main{
+padding-top: 9%;
+}
+img{
+  vertical-align: middle;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 main h3, p{
   font-family: 'Open Sans', sans-serif;
   color: #0B1D26;
@@ -11,4 +18,15 @@ main p{
 }
 .text{
   text-align: center;
+  vertical-align: middle;
+ /* background-color: #fdfdfd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
+/*.row{
+  background-color: #fdfdfd;
+  width: 1000px;
+  display:block;
+  margin:auto;
+  padding: 5% 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/

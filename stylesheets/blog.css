@@ -10,8 +10,8 @@ img{
   padding: 2%;
 }
 .box-img{
-  position: relative;
-  left:250px;
+  display:block;
+  margin:auto;
 }
 code{
   color:#255F7F;
@@ -26,6 +26,7 @@ article{
   /*position: absolute;
   margin: 200px;*/
   font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 article header{
   padding:25px;
